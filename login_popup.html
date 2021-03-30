@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper d-flex align-items-center align-middle h-100">
+        <div class="login container">
+            <div class="row">
+                <h1 class="col-12 h1 mb-0 font-weight-normal">會員登入</h1>
+                <h2 class="col-12 h2 mb-3 font-weight-normal">Welcome</h2>
+            </div>
+    
+            <div class="row mb-4 ">
+                <div class="col-6">
+                    <div class="input login__id ">
+                        <input type="text" id="user_id" class="  form-control form-rounded" placeholder="請輸入會員ID或手機號碼">
+                        <label class="pl-3 custom-control-label align-middle" for="user_id"></label>
+                    </div>
+                </div>
+    
+                <div class="col-6">
+                    <div class="input login__password  float-right">
+                        <input type="text" id="user_ps" class="  form-control form-rounded " placeholder="請輸入會員密碼">
+                        <label class="pl-3 custom-control-label align-middle" for="user_ps"></label>
+                    </div>
+                </div>
+            </div> 
+       
+            <div class="row mb-4 ">
+                <div class="col-12">
+                    <div class="checkbox custom-control custom-checkbox ml-3">
+                        <input type="checkbox" class="custom-control-input align-middle" id="customCheck1" />
+                        <label class="pl-3 custom-control-label align-middle" for="customCheck1">記住我的會員帳號</label>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row  login__under align-items-center">
+                <div class="col-8">
+                    <a class="pl-3" href="forget_password.html">忘記密碼</a>
+                    <span class="login__register ">我是新會員，<a href="register.html">我要註冊</a></span>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-lg float-right ml-auto" type="submit">我要登入</button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__frame">
+            <p><span class="txt--green">密碼錯誤</span>，請重新登入謝謝！</p>
+            <p><span class="txt--green">會員ID或手機號碼錯誤</span>，請重新<br>登入謝謝！</p>
+            <a class="dialog__close" href=""></a>
+        </div>
+    </div>
+</body>
+
+</html>

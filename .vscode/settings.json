@@ -1,0 +1,13 @@
+{
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "compact",
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "ie 10"
+      ],
+      "liveSassCompile.settings.generateMap": false
+}
