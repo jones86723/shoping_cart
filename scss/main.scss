@@ -42,12 +42,17 @@ body{
 .txt--underline{
   text-decoration: underline !important;
 }
+.txt--graybg{
+  background: rgba(229, 229, 229, 0.5);
+}
 .fs-12{font-size: 12px !important;}
 .fs-13{font-size: 13px !important;}
 .fs-14{font-size: 14px !important;}
 .fs-15{font-size: 15px !important;}
 .fs-16{font-size: 16px !important;}
 .fs-18{font-size: 18px !important;}
+.fs-20{font-size: 18px !important;}
+.fs-22{font-size: 18px !important;}
 .fs-24{font-size: 24px !important;}
 .fs-32{font-size: 32px !important;}
 .fs-36{font-size: 36px !important;}
@@ -71,6 +76,7 @@ body{
 .w-287{ width: 287px ; }
 .w-291{ width: 291px ; }
 .w-250{ width: 250px ;  }
+.w-360{ width: 360px ;  }
 .w-404{ width: 404px;}
 .w-445{ width: 445px;}
 .w-458{width: 458px;}
@@ -209,6 +215,17 @@ body{
     color:#FFF;
     opacity: 0.7;
   }
+  &--white{
+    background-color: #E6F3F5;
+    color: #2F96AC;
+    &:hover{
+      color:#2F96AC;
+      opacity: 0.7;
+    }
+  }
+  &--whitegreen{
+    background-color: #9BCDD8;
+  }
   &--txtsm{
     font-size: 18px;
     padding: 15px 15px;
@@ -290,6 +307,23 @@ body{
     &:hover{
       color: #999;
     }
+  }
+}
+
+.tag{
+  &--green{
+    font-size: 15px;
+    background-color: #9BCDD8;
+    color: #FFF;
+    padding: 4px;
+    border-radius: 5px;
+  }
+  &--gray{
+    font-size: 15px;
+    background-color: #C4C4C4;
+    color: #FFF;
+    padding: 4px;
+    border-radius: 5px;
   }
 }
 
@@ -501,11 +535,12 @@ select{
   border-radius: 0;
   width: 25px;
   height: 25px;
-  top: 0.16rem;
+  top:-0.05rem;
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{
   width: 25px;
   height: 25px;
+  top: -0.05rem;
 }
 .register{
   width: 1130px;
@@ -842,8 +877,18 @@ header{
   &__point{
     color: #3096ad;
     border: 1px #3096ad solid;
-    
     font-weight: bold;
+  }
+  &__point-tip{
+    position: absolute;
+    width: 200px;
+    text-align: left;
+    left: 50%;
+    top: 50%;
+    margin-top: 18px;
+    margin-left: -33px;
+    font-weight: bold;
+    color: #666;
   }
   &__logout{
     color: #666666;
@@ -1017,10 +1062,34 @@ header{
     &.current{
       color: #46ADC3;
     }
+    
+    
   }
   &__line{
     border-top: 1px solid #9BCDD8;
   }
+  &__new{
+      color: #FFF;
+      position: relative;
+      font-size: 13px;
+      background-color: #46ADC3;
+      position: absolute;
+      padding: 0px 6px;
+      line-height: 20px;
+      border-radius: 3px;
+      margin-left: 7px;
+      &:before{
+        content: "";
+        position: absolute;
+        left: -6px;
+        top: 5px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 8px 3px 0;
+        border-color: transparent #46adc3 transparent transparent;
+      }
+    }
 }
 
 .okbtn{
@@ -1092,6 +1161,37 @@ header{
     }
     
   }
+  &--darkblue{
+    th{
+      color:#FFF;
+      background: #46ADC3;
+      font-weight: normal;
+      text-align: center;
+      font-size: 16px;
+      padding: 0px;
+      vertical-align: middle !important;
+      border: 0 !important;
+    }
+    td{
+      font-size: 16px;
+      padding: 0px;
+      vertical-align: middle;
+      border: 0 !important;
+      color: #666;
+    }
+    tr{
+      height: 37px;
+      text-align: center;
+      &:nth-child(odd){
+        background: rgba(230, 243, 245, 0.5);
+      }
+      &:nth-child(even){
+        background: rgba(229, 229, 229, 0.5);
+      }
+      
+    }
+    
+  }
   &--darkth{
     th{
       color:#FFF;
@@ -1114,6 +1214,7 @@ header{
 
      td, 
      thead th{
+       position: relative;
        vertical-align: middle;
        font-size: 15px;
       font-weight: normal;
@@ -1504,6 +1605,9 @@ header{
     width: 230px;
     height: 388px;
     margin: 0 9px 48px 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &:hover{
       border: 1px solid #46ADC4;
     }
@@ -1512,8 +1616,23 @@ header{
       
     }
   }
+  &__img{
+    display: flex;
+    width: 220px;
+    height: 220px;
+    background-color: #E5E5E5;
+    align-items: center;
+  }
   &__name{
     height: 44px;
+    &--3line{
+      height: 66px;
+      &.ellipsis {
+       
+        -webkit-line-clamp: 3;
+      
+      }
+    }
   }
   &__price{
    p{
@@ -1898,3 +2017,59 @@ header{
 
 }
 
+.pagenum{
+  
+    a{
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      color: #999;
+      text-decoration: none;
+      &:hover{
+        color: #46ADC3;
+      }
+      &.current{
+        color: #46ADC3;
+        border: 1px solid #9BCDD8;
+      }
+      &+a{
+        margin-left: 25px;
+      }
+    }
+  
+}
+
+.personal,.store{
+  &__brand{
+    a{
+      margin: 7px 19px;
+      display: inline-block;
+      border: 1px solid #E5E5E5;
+    }
+  }
+  &__store{
+    a{
+      margin: 21px 37px;
+      display: inline-block;
+      border: 1px solid #E5E5E5;
+    }
+  }
+}
+
+.qa{
+  h4{
+    background-color: #46ADC3;
+    color: #FFF;
+   
+    height: 50px;
+    left: 359px;
+    top: 327px;
+    font-size: 20px;
+    border-radius: 50px;
+    line-height: 50px;
+    padding: 0 22px;
+  }
+  p{
+    padding: 20px 22px;
+  }
+}
