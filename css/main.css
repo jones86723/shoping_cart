@@ -374,6 +374,12 @@ header h1 { font-family: "Century Gothic"; color: #3096ad; padding-top: 60px; fo
 
 header h1 span { font-size: 24px; font-weight: bold; }
 
+.logo { font-family: "Century Gothic"; color: #3096ad; padding-top: 60px; font-size: 49px; display: block; margin-bottom: 0; margin-top: 0; }
+
+.logo:hover { color: #3096ad; text-decoration: none; }
+
+.logo span { font-size: 24px; font-weight: bold; }
+
 .account__point { color: #3096ad; border: 1px #3096ad solid; font-weight: bold; }
 
 .account__point-tip { position: absolute; width: 200px; text-align: left; left: 50%; top: 50%; margin-top: 18px; margin-left: -33px; font-weight: bold; color: #666; }
