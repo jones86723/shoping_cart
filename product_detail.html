@@ -59,7 +59,17 @@
                         <div class="mx-3 dropdown">
                             <a id="dropdownMenu1" data-toggle="dropdown" data-bs-toggle="dropdown" aria-expanded="false" href="#">3C</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">個人用品</a></li>
+                                <li><a href="#">個人用品個人用</a></li>
+                                <li><a href="#">家用清潔</a></li>
+                                <li><a href="#">生活百貨</a></li>
+                                <li><a href="#">餐廚用品</a></li>
+                                <li><a href="#">寵物用品</a></li>
+                                <li><a href="#">個人用品個人用</a></li>
+                                <li><a href="#">家用清潔</a></li>
+                                <li><a href="#">生活百貨</a></li>
+                                <li><a href="#">餐廚用品</a></li>
+                                <li><a href="#">寵物用品</a></li>
+                                <li><a href="#">個人用品個人用</a></li>
                                 <li><a href="#">家用清潔</a></li>
                                 <li><a href="#">生活百貨</a></li>
                                 <li><a href="#">餐廚用品</a></li>
@@ -181,14 +191,14 @@
                                     <div class="swiper-slide" style="background-image:url(./img/ps1.png)"></div>
                                 </div>
                             </div>
-                              <div class="swiper-container product__gallery-thumbs">
+                            <div class="swiper-container product__gallery-thumbs">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide border" style="background-image:url(./img/pd1.jpg)"></div>
                                     <div class="swiper-slide border" style="background-image:url(./img/ps2.png)"></div>
                                     <div class="swiper-slide border" style="background-image:url(./img/ps3.png)"></div>
                                     <div class="swiper-slide border" style="background-image:url(./img/ps1.png)"></div>
                                 </div>
-                              </div>
+                            </div>
                             <div class="product__button-next "><i class="icon-arr_r"></i></div>
                             <div class="product__button-prev "> <i class="icon-arr_l"></i></div>
                         </div>
@@ -310,17 +320,46 @@
                 </div>
             </div>
         </main>
+
+
+
         <footer class="footer flex-column">
-            <div class="footer__ad d-flex justify-content-between">
-                <a href="#">
-                    <img src="img/ad1.jpg" alt="">
-                </a>
-                <a href="#">
-                    <img src="img/ad2.jpg" alt="">
-                </a>
-                <a href="#">
-                    <img src="img/ad3.jpg" alt="">
-                </a>
+            <div class="swiper-container footer__ad-con">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide footer__ad d-flex justify-content-between">
+                        <a href="#">
+                            <img src="img/ad1.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/ad2.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/ad3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide footer__ad d-flex justify-content-between">
+                        <a href="#">
+                            <img src="img/ad1.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/ad2.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/ad3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide footer__ad d-flex justify-content-between">
+                        <a href="#">
+                            <img src="img/ad1.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/ad2.jpg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/ad3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
             <p class="py-5 ">版權所有 copyright © 2020 易善數位科技. All Rights Reserved.</p>
         </footer>
@@ -353,6 +392,20 @@
           thumbs: {
             swiper: galleryThumbs,
           },
+        });
+        var galleryFooter = new Swiper('.footer__ad-con', {
+            autoWidth: false, //enable auto height
+            autoHeight: false, //enable auto height
+         
+          loop: true,
+          autoplay:true
+          /*navigation: {
+            nextEl: '.product__button-next',
+            prevEl: '.product__button-prev',
+          },
+          thumbs: {
+            swiper: galleryThumbs,
+          },*/
         });
       </script>
 </body>

@@ -966,15 +966,21 @@ header{
     }
     .dropdown-menu{
       background: #2F96AC;
-      left: 50% !important;
+     // left: 50% !important;
+      max-width: 150px;
       min-width: 120px;
-      margin-left: -60px;
+      width: auto;
+      //margin-left: -60px;
       top: 13px !important;
       right: initial;
       border-radius: 0;
       border: 0;
       padding: 0;
-      
+
+      left: 50% !important;
+      right: auto !important;
+      text-align: center !important;
+      transform: translate(-50%, 23px) !important;
       li{
         text-align: center;
         height: 35px;
@@ -987,7 +993,10 @@ header{
         line-height: 35px;
         text-decoration: none;
         display: block;
+        white-space: nowrap;
+        padding: 0 20px;
       }
+      
     }
     
   }
@@ -1144,6 +1153,9 @@ header{
     font-size: 14px;
     color: #46ADC3;
     margin: 0;
+  }
+  &__ad-con{
+    width: 1100px !important;
   }
 }
 
