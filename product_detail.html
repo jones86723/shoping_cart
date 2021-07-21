@@ -321,8 +321,7 @@
             </div>
         </main>
 
-
-
+        <!--
         <footer class="footer flex-column">
             <div class="swiper-container footer__ad-con">
                 <div class="swiper-wrapper">
@@ -363,6 +362,48 @@
             </div>
             <p class="py-5 ">版權所有 copyright © 2020 易善數位科技. All Rights Reserved.</p>
         </footer>
+        -->
+        <footer class="footer flex-column">
+            <div class="swiper-container footer__ad footer__ad-con">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide  d-flex justify-content-between">
+                        <a href="#">
+                            <img src="img/ad1.jpg" alt="">
+                        </a>
+                       
+                    </div>
+                    <div class="swiper-slide  d-flex justify-content-between">
+                       
+                        <a href="#">
+                            <img src="img/ad2.jpg" alt="">
+                        </a>
+                       
+                    </div>
+                    <div class="swiper-slide  d-flex justify-content-between">
+                      
+                        <a href="#">
+                            <img src="img/ad3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide  d-flex justify-content-between">
+                        <a href="#">
+                            <img src="img/ad1.jpg" alt="">
+                        </a>
+                       
+                    </div>
+                    <div class="swiper-slide  d-flex justify-content-between">
+                       
+                        <a href="#">
+                            <img src="img/ad2.jpg" alt="">
+                        </a>
+                       
+                    </div>
+                  
+                 
+                </div>
+            </div>
+            <p class="py-5 ">版權所有 copyright © 2020 易善數位科技. All Rights Reserved.</p>
+        </footer>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
@@ -396,7 +437,8 @@
         var galleryFooter = new Swiper('.footer__ad-con', {
             autoWidth: false, //enable auto height
             autoHeight: false, //enable auto height
-         
+            slidesPerView: 3,
+            spaceBetween: 30,
           loop: true,
           autoplay:true
           /*navigation: {

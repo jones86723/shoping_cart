@@ -464,7 +464,7 @@ header h1 span { font-size: 24px; font-weight: bold; }
 
 .footer { background-color: #E6F3F5; min-height: 120px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
 
-.footer__ad { width: 1100px; padding: 30px 0; border-top: 1px solid #9BCDD8; border-bottom: 1px solid #9BCDD8; }
+.footer__ad { width: 1100px !important; padding: 30px 0; border-top: 1px solid #9BCDD8; border-bottom: 1px solid #9BCDD8; }
 
 .footer p { font-size: 14px; color: #46ADC3; margin: 0; }
 
